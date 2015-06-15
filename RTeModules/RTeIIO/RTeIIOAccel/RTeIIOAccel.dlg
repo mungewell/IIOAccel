@@ -1,0 +1,23 @@
+{
+    "DialogName" : "RTeIIOAccel",
+    "DialogDesc" : "Settings dialog for RTeIIOAccel",
+
+    "DialogData" : [
+        {
+            "VarName" : "SampleRate",
+            "VarDesc" : "Accel sample rate",
+            "VarType" : "ConfigSelection",
+            "VarValue" : 2,
+            "VarStringArray" : [{ "VarEntry" : "1Hz"},
+                                { "VarEntry" : "10Hz"},
+                                { "VarEntry" : "25Hz"},
+                                { "VarEntry" : "50Hz"},
+                                { "VarEntry" : "100Hz"},
+                                { "VarEntry" : "200Hz"},
+                                { "VarEntry" : "400Hz"},
+                                { "VarEntry" : "1600Hz"}
+                               ]
+        }
+    ]
+}
+

@@ -1,0 +1,43 @@
+{
+    "ConnectionsBlock": [
+        {
+            "ConnectionsSignalModuleName": "accel",
+            "ConnectionsSignalName": "newAccelSample",
+            "ConnectionsSlots": [
+                {
+                    "ConnectionsSignalSlotName": "RTeMainModule",
+                    "ConnectionsSlotName": "newAccelSample"
+                }
+            ],
+            "ConnectionsUserParameter": "RTeSensorAccelData"
+        }
+    ],
+    "HeaderBlock": {
+        "DesignDescription": "An RTeEmbedded design",
+        "DesignLanguage": "cppconsole",
+        "DesignName": "IIOAccel",
+        "DesignSaveTime": "Mon Jun 15 16:19:52 2015",
+        "DeveloperMode": false,
+        "GeneratePath": "/home/syntro/work/IIOAccel"
+    },
+    "ModulesBlock": [
+        {
+            "ModulesName": "RTeMainModule",
+            "ModulesType": "RTeMainModule",
+            "ModulesViewX": 276,
+            "ModulesViewY": 0
+        },
+        {
+            "ModulesName": "accel",
+            "ModulesSettings": [
+                {
+                    "ModuleSettingsName": "SampleRate",
+                    "ModuleSettingsValue": "2"
+                }
+            ],
+            "ModulesType": "RTeIIOAccel",
+            "ModulesViewX": 15,
+            "ModulesViewY": 0
+        }
+    ]
+}
