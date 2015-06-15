@@ -1,0 +1,37 @@
+//  Definitions for LSM303DLHC accelerometer
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2708";
+
+    fragment@0 {
+        target = <&gpio>;
+        __overlay__ {
+            accel0_pins: accel0_pins {
+                brcm,pins = <25>;
+                brcm,function = <0>; /* input */
+            };
+        };
+    };
+
+    fragment@1 {
+        target = <&i2c1>;
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <0>;
+            status = "okay";
+            accel0: lsm303dlhcaccel@19 {
+                compatible = "st,lsm303dlhc-accel";
+                reg = <0x19>;
+                interrupt-parent = <&gpio>;
+                interrupts = <25 0x2>;
+                status = "okay";
+            };
+        };
+    };
+
+	__overrides__ {
+        interrupt = <&accel0_pins>,"brcm,pins:0",<&accel0>,"interrupts:0";
+    };
+};

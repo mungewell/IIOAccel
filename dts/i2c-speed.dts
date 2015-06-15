@@ -1,0 +1,12 @@
+// Definitions for the missing i2c baudrate parameters
+/dts-v1/;
+/plugin/;
+
+/ {
+   compatible = "brcm,bcm2708";
+
+   __overrides__ {
+      i2c0_baudrate = <&i2c0>,"clock-frequency:0";
+      i2c1_baudrate = <&i2c1>,"clock-frequency:0";
+   };
+};
