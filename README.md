@@ -35,11 +35,19 @@ Then edit /boot/config.txt and add the line:
 
     dtoverlay=lsm303dlhcaccel
     
-The Raspberry Pi must then be rebooted. Run the following command:
+The Raspberry Pi must then be rebooted. Once the Pi has rebooted, run the following command:
 
     sudo vcdbg log msg
     
-to see if any errors are being reported. If not, just run:
+to see if any errors are being reported. 
+
+An additional thing to check is that the interrupt has been set up correctly. Enter:
+
+    cat /proc/interrupts    
+
+The lsm303dlhcaccel interrupt should appear in the table.
+
+To run the app enter:
 
     sudo IIOAccel
     

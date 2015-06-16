@@ -10,7 +10,7 @@
         __overlay__ {
             accel0_pins: accel0_pins {
                 brcm,pins = <25>;
-                brcm,function = <0>; /* input */
+                brcm,function = <0>;
             };
         };
     };
@@ -31,7 +31,7 @@
         };
     };
 
-	__overrides__ {
+    __overrides__ {
         interrupt = <&accel0_pins>,"brcm,pins:0",<&accel0>,"interrupts:0";
     };
 };
