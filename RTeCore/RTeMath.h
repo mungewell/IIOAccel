@@ -2,7 +2,7 @@
 //
 //  This file is part of RTembedded
 //
-//  Copyright (c) 2015, richards-tech
+//  Copyright (c) 2015, richards-tech, LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of
 //  this software and associated documentation files (the "Software"), to deal in
@@ -95,7 +95,7 @@ public:
     void zero();
     bool isZero();
     QString display(const QString &label);
- 
+
     static float dotProduct(const RTeVector3& a, const RTeVector3& b);
     static void crossProduct(const RTeVector3& a, const RTeVector3& b, RTeVector3& d);
 

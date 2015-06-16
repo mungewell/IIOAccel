@@ -2,7 +2,7 @@
 //
 //  This file is part of RTembedded
 //
-//  Copyright (c) 2015, richards-tech
+//  Copyright (c) 2015, richards-tech, LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of
 //  this software and associated documentation files (the "Software"), to deal in
@@ -56,7 +56,7 @@ private:
     static bool I2COpen(unsigned char bus);
     static void I2CClose(unsigned char bus);
     static bool I2CSelectSlave(unsigned char bus, unsigned char slaveAddr, const char *errorMsg);
-    
+
     static RTEI2CDRIVER_CHANNEL m_channels[RTEI2CDRIVER_MAX_BUS];
 
     static QMutex m_lock;

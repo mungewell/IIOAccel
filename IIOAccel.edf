@@ -16,9 +16,9 @@
         "DesignDescription": "An RTeEmbedded design",
         "DesignLanguage": "cppconsole",
         "DesignName": "IIOAccel",
-        "DesignSaveTime": "Mon Jun 15 16:19:52 2015",
+        "DesignSaveTime": "Tue Jun 16 10:26:52 2015",
         "DeveloperMode": false,
-        "GeneratePath": "/home/syntro/work/IIOAccel"
+        "GeneratePath": "/home/syntro/work/richards-tech/IIOAccel"
     },
     "ModulesBlock": [
         {

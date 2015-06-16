@@ -2,7 +2,7 @@
 //
 //  This file is part of RTembedded
 //
-//  Copyright (c) 2015, richards-tech
+//  Copyright (c) 2015, richards-tech, LLC
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of
 //  this software and associated documentation files (the "Software"), to deal in
@@ -46,7 +46,7 @@ public:
     virtual ~RTeSPIDriver();
 
     static bool setSpeed(unsigned char bus, unsigned select, int speed);
-    
+
     static bool deviceRead(unsigned char bus, unsigned char select, unsigned char regAddr, unsigned char length,
                  unsigned char *data, const char *errorMsg);
 
@@ -61,10 +61,10 @@ private:
                   unsigned char length, unsigned char const *data, const char *errorMsg);
     static bool SPIOpen(RTESPIDRIVER_CHANNEL *channel);
     static void SPIClose(unsigned char bus, unsigned char select);
-    
+
     static bool ifWrite(RTESPIDRIVER_CHANNEL *channel, unsigned char *data, unsigned char length);
     static RTESPIDRIVER_CHANNEL *getChannel(unsigned char bus, unsigned char select);
-    
+
     static RTESPIDRIVER_CHANNEL m_channels[RTESPIDRIVER_MAX_BUS][RTESPIDRIVER_MAX_SELECT];
 
     static QMutex m_lock;
